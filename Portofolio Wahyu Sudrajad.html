@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahyu Sudrajad | Direktur Utama PT WDSN & Pendidik Informatika</title>
+    <meta name="description" content="Portofolio resmi Wahyu Sudrajad - Direktur Utama PT Wahyu Solusi Digital Nusantara, Guru Informatika SMP Kartikatama Metro, Mahasiswa Sistem Informasi Universitas Terbuka, dan Kreator Digital.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        accent: {
+                            500: '#10b981',
+                            600: '#059669',
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out 3s infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+
+        /* Glassmorphism */
+        .glass {
+            background: rgba(255, 255, 255, 0.78);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.78);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        /* Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Typing Cursor */
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 1s step-start infinite;
+            color: #2563eb;
+            margin-left: 2px;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 antialiased selection:bg-primary-600 selection:text-white overflow-x-hidden">
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-200/70 dark:border-slate-800/70 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <!-- Brand Logo (Person Icon) -->
+                <a href="#beranda" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-600 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-primary-600/25 group-hover:scale-105 transition-transform">
+                        <i data-lucide="user" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <span class="font-display font-bold text-lg tracking-tight text-slate-900 dark:text-white block leading-none">Wahyu Sudrajad</span>
+                        <span class="text-[11px] font-medium text-primary-600 dark:text-primary-400 tracking-wider uppercase">PT WDSN &bull; Educator</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+                    <a href="#beranda" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-100/80 dark:text-slate-300 dark:hover:text-primary-400 dark:hover:bg-slate-800/60 transition">Beranda</a>
+                    <a href="#tentang" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-100/80 dark:text-slate-300 dark:hover:text-primary-400 dark:hover:bg-slate-800/60 transition">Tentang</a>
+                    <a href="#peran" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-100/80 dark:text-slate-300 dark:hover:text-primary-400 dark:hover:bg-slate-800/60 transition">Peran & Karier</a>
+                    <a href="#proyek" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-100/80 dark:text-slate-300 dark:hover:text-primary-400 dark:hover:bg-slate-800/60 transition">Proyek</a>
+                    <a href="#keahlian" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-100/80 dark:text-slate-300 dark:hover:text-primary-400 dark:hover:bg-slate-800/60 transition">Keahlian</a>
+                    <a href="#sertifikasi" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-primary-600 hover:bg-slate-100/80 dark:text-slate-300 dark:hover:text-primary-400 dark:hover:bg-slate-800/60 transition">Sertifikasi</a>
+                </nav>
+
+                <!-- Right Actions -->
+                <div class="flex items-center gap-2 sm:gap-3">
+                    <!-- Dark Mode Toggle -->
+                    <button id="theme-toggle" aria-label="Ganti Tema" class="p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition">
+                        <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+                        <i data-lucide="sun" class="w-5 h-5 hidden dark:block text-amber-400"></i>
+                    </button>
+
+                    <!-- Contact CTA -->
+                    <a href="#kontak" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary-600 hover:bg-primary-700 text-white text-sm font-semibold shadow-md shadow-primary-600/20 transition">
+                        <span>Hubungi Saya</span>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" aria-label="Buka Menu" class="md:hidden p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200">
+                        <i data-lucide="menu" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 pt-3 pb-6 space-y-1 shadow-xl">
+            <a href="#beranda" class="mobile-link block px-3 py-2.5 rounded-xl text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Beranda</a>
+            <a href="#tentang" class="mobile-link block px-3 py-2.5 rounded-xl text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Tentang Saya</a>
+            <a href="#peran" class="mobile-link block px-3 py-2.5 rounded-xl text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Peran & Karier</a>
+            <a href="#proyek" class="mobile-link block px-3 py-2.5 rounded-xl text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Portofolio Proyek</a>
+            <a href="#keahlian" class="mobile-link block px-3 py-2.5 rounded-xl text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Keahlian</a>
+            <a href="#sertifikasi" class="mobile-link block px-3 py-2.5 rounded-xl text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800">Sertifikasi & Prestasi</a>
+            <a href="#kontak" class="mobile-link mt-3 flex items-center justify-center gap-2 w-full px-4 py-3 rounded-xl bg-primary-600 text-white font-semibold">
+                <span>Hubungi Saya</span>
+                <i data-lucide="send" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="beranda" class="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
+        <!-- Background Ambient Glow -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-gradient-to-tr from-primary-500/15 via-indigo-500/10 to-emerald-500/15 blur-3xl rounded-full pointer-events-none -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Intro -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60 border border-primary-200 dark:border-primary-800/60 text-primary-700 dark:text-primary-300 text-xs sm:text-sm font-medium">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span>Terbuka untuk Kolaborasi Digital & Edukasi</span>
+                    </div>
+
+                    <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-slate-900 dark:text-white leading-[1.15]">
+                        Halo, Saya <br class="hidden sm:block">
+                        <span class="bg-gradient-to-r from-primary-600 via-indigo-600 to-emerald-500 bg-clip-text text-transparent">Wahyu Sudrajad</span>
+                    </h1>
+
+                    <div class="text-lg sm:text-xl font-semibold text-slate-700 dark:text-slate-300 h-8 flex items-center justify-center lg:justify-start">
+                        <span id="typing-text" class="typing-cursor"></span>
+                    </div>
+
+                    <p class="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Memimpin inovasi solusi digital sebagai <strong>Direktur Utama PT Wahyu Solusi Digital Nusantara (PT WDSN)</strong>, mengabdi sebagai <strong>Pendidik Informatika</strong> di SMP Kartikatama Metro, dan menempuh studi <strong>S1 Sistem Informasi di Universitas Terbuka</strong>.
+                    </p>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+                        <a href="#proyek" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-primary-600 hover:bg-primary-700 text-white font-semibold shadow-lg shadow-primary-600/25 hover:-translate-y-0.5 transition-all">
+                            <i data-lucide="folder-kanban" class="w-5 h-5"></i>
+                            <span>Lihat Portofolio Proyek</span>
+                        </a>
+                        <a href="#sertifikasi" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-primary-400 dark:hover:border-primary-600 text-slate-800 dark:text-slate-200 font-semibold shadow-sm hover:-translate-y-0.5 transition-all">
+                            <i data-lucide="award" class="w-5 h-5 text-amber-500"></i>
+                            <span>11+ Sertifikasi & Prestasi</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200/80 dark:border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 dark:text-white">PT WDSN</div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">Direktur Utama</div>
+                        </div>
+                        <div>
+                            <div class="font-display font-extrabold text-2xl sm:text-3xl text-primary-600 dark:text-primary-400">11+</div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">Sertifikat & Juara</div>
+                        </div>
+                        <div>
+                            <div class="font-display font-extrabold text-2xl sm:text-3xl text-emerald-600 dark:text-emerald-400">5 Juz</div>
+                            <div class="text-xs text-slate-500 dark:text-slate-400 font-medium">Tahfidz Bil Ghoib</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Profile Card Visual -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md">
+                        <!-- Decorative Card Back -->
+                        <div class="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-primary-600 via-indigo-500 to-emerald-500 opacity-25 blur-xl"></div>
+                        
+                        <!-- Main Profile Card -->
+                        <div class="relative rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 p-6 sm:p-8 shadow-2xl">
+                            <!-- Avatar Header (Person Icon) -->
+                            <div class="flex flex-col items-center text-center">
+                                <div class="relative mb-5">
+                                    <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-3xl bg-gradient-to-br from-primary-600 via-indigo-600 to-slate-900 flex items-center justify-center text-white shadow-xl ring-4 ring-primary-500/20">
+                                        <i data-lucide="user" class="w-14 h-14 sm:w-16 sm:h-16 stroke-[1.75]"></i>
+                                    </div>
+                                    <span class="absolute -bottom-2 -right-2 px-3 py-1 rounded-full bg-emerald-500 text-white text-[11px] font-bold shadow-md flex items-center gap-1">
+                                        <i data-lucide="badge-check" class="w-3.5 h-3.5"></i> Verified
+                                    </span>
+                                </div>
+
+                                <h2 class="font-display font-bold text-xl sm:text-2xl text-slate-900 dark:text-white">Wahyu Sudrajad</h2>
+                                <p class="text-sm text-primary-600 dark:text-primary-400 font-medium mt-1">Direktur Utama &bull; Guru Informatika</p>
+                                
+                                <div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 mt-2">
+                                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-rose-500"></i>
+                                    <span>Lampung Selatan, Indonesia</span>
+                                </div>
+                            </div>
+
+                            <!-- Key Highlights List -->
+                            <div class="mt-6 pt-6 border-t border-slate-100 dark:border-slate-800 space-y-3 text-sm">
+                                <div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/60">
+                                    <div class="w-9 h-9 rounded-lg bg-primary-100 dark:bg-primary-900/40 text-primary-600 dark:text-primary-400 flex items-center justify-center shrink-0">
+                                        <i data-lucide="building-2" class="w-4 h-4"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-slate-800 dark:text-slate-200 text-xs">PT Wahyu Solusi Digital Nusantara</div>
+                                        <div class="text-[11px] text-slate-500 dark:text-slate-400">Direktur Utama (PT WDSN)</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/60">
+                                    <div class="w-9 h-9 rounded-lg bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+                                        <i data-lucide="monitor-play" class="w-4 h-4"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-slate-800 dark:text-slate-200 text-xs">SMP Kartikatama Metro</div>
+                                        <div class="text-[11px] text-slate-500 dark:text-slate-400">Guru Mata Pelajaran Informatika</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center gap-3 p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/60">
+                                    <div class="w-9 h-9 rounded-lg bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                                        <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold text-slate-800 dark:text-slate-200 text-xs">Universitas Terbuka (UT Lampung)</div>
+                                        <div class="text-[11px] text-slate-500 dark:text-slate-400">Mahasiswa S1 Sistem Informasi</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="hidden sm:flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute -left-8 top-10 animate-float">
+                            <div class="w-8 h-8 rounded-lg bg-amber-100 dark:bg-amber-900/40 text-amber-600 flex items-center justify-center">
+                                <i data-lucide="sparkles" class="w-4 h-4"></i>
+                            </div>
+                            <div class="text-xs">
+                                <div class="font-bold text-slate-800 dark:text-white">Gemini Certified</div>
+                                <div class="text-[10px] text-slate-500">Google for Education</div>
+                            </div>
+                        </div>
+
+                        <div class="hidden sm:flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute -right-6 bottom-12 animate-float-delayed">
+                            <div class="w-8 h-8 rounded-lg bg-sky-100 dark:bg-sky-900/40 text-sky-600 flex items-center justify-center">
+                                <i data-lucide="code-2" class="w-4 h-4"></i>
+                            </div>
+                            <div class="text-xs">
+                                <div class="font-bold text-slate-800 dark:text-white">Apps Script & AI</div>
+                                <div class="text-[10px] text-slate-500">EdTech Developer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TENTANG SAYA & PENDIDIKAN ==================== -->
+    <section id="tentang" class="py-20 bg-white dark:bg-slate-900/50 border-y border-slate-200/70 dark:border-slate-800/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Bio Narrative -->
+                <div class="lg:col-span-6 space-y-6 reveal">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 dark:bg-primary-950/60 text-primary-600 dark:text-primary-400 text-xs font-bold uppercase tracking-wider">
+                        <i data-lucide="user-check" class="w-3.5 h-3.5"></i> Profil Singkat
+                    </div>
+                    <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 dark:text-white">
+                        Menjembatani Dunia Teknologi, Pendidikan, & Kepemimpinan
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Saya adalah seorang praktisi teknologi informasi, wirausahawan digital, dan pendidik yang berdomisili di <strong>Lampung Selatan, Indonesia</strong>. Berangkat dari latar belakang Teknik Komputer dan Jaringan, saya mendedikasikan karya untuk membangun ekosistem digital yang solutif dan berdampak bagi masyarakat.
+                    </p>
+                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                        Di samping memimpin <strong>PT Wahyu Solusi Digital Nusantara (PT WDSN)</strong>, saya aktif mengajar mata pelajaran <strong>Informatika di SMP Kartikatama Metro</strong>, mengembangkan media pembelajaran digital berbasis mobile maupun otomasi Google Workspace, serta terus memperdalam keilmuan di Program Studi <strong>S1 Sistem Informasi Universitas Terbuka</strong>.
+                    </p>
+
+                    <!-- Personal Attributes Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700/60">
+                            <div class="text-xs text-slate-500 dark:text-slate-400">Domisili</div>
+                            <div class="font-semibold text-slate-900 dark:text-white mt-0.5 flex items-center gap-1.5">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-primary-600"></i> Lampung Selatan, Indonesia
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/60 dark:border-slate-700/60">
+                            <div class="text-xs text-slate-500 dark:text-slate-400">Fokus Utama</div>
+                            <div class="font-semibold text-slate-900 dark:text-white mt-0.5 flex items-center gap-1.5">
+                                <i data-lucide="cpu" class="w-4 h-4 text-emerald-600"></i> Digital Solution & EdTech
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Organization Timeline -->
+                <div class="lg:col-span-6 space-y-6 reveal">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 text-xs font-bold uppercase tracking-wider">
+                        <i data-lucide="graduation-cap" class="w-3.5 h-3.5"></i> Pendidikan & Organisasi
+                    </div>
+                    <h3 class="font-display font-bold text-2xl text-slate-900 dark:text-white">
+                        Rekam Jejak Akademik & Pengabdian
+                    </h3>
+
+                    <div class="relative pl-6 border-l-2 border-primary-200 dark:border-primary-900 space-y-6">
+                        <!-- Item 1 -->
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-primary-600 ring-4 ring-white dark:ring-slate-900"></span>
+                            <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200/80 dark:border-slate-700/80">
+                                <span class="text-xs font-bold text-primary-600 dark:text-primary-400">Saat Ini &bull; Perguruan Tinggi</span>
+                                <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white mt-1">Universitas Terbuka (UT Lampung)</h4>
+                                <p class="text-sm font-medium text-slate-700 dark:text-slate-300">Mahasiswa S1 Program Studi Sistem Informasi</p>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Mendalami rekayasa perangkat lunak, manajemen sistem informasi, basis data, dan tata kelola teknologi informasi modern.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-emerald-500 ring-4 ring-white dark:ring-slate-900"></span>
+                            <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200/80 dark:border-slate-700/80">
+                                <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400">Lulus 2026 &bull; Pendidikan Vokasi</span>
+                                <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white mt-1">SMKS Bhina Sosial</h4>
+                                <p class="text-sm font-medium text-slate-700 dark:text-slate-300">Alumni Jurusan Teknik Komputer dan Jaringan (TKJ)</p>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Menguasai infrastruktur jaringan, administrasi server, perangkat keras komputer, serta dasar pemrograman.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-amber-500 ring-4 ring-white dark:ring-slate-900"></span>
+                            <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200/80 dark:border-slate-700/80">
+                                <span class="text-xs font-bold text-amber-600 dark:text-amber-400">Kepramukaan & Kepemudaan</span>
+                                <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white mt-1">Pelatih Pramuka & Aktivis Pemuda</h4>
+                                <p class="text-sm font-medium text-slate-700 dark:text-slate-300">Kwarran Jati Agung / Kwarcab Lampung Selatan</p>
+                                <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Aktif membina karakter generasi muda, kepemimpinan digital (KNPI), serta kaderisasi pelajar (IPNU Lampung Selatan).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PERAN & KARIER UTAMA ==================== -->
+    <section id="peran" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+                <span class="text-xs font-bold uppercase tracking-widest text-primary-600 dark:text-primary-400">Pilar Pengabdian</span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 dark:text-white mt-2">
+                    Peran Profesional & Kepemimpinan
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-3">
+                    Sinergi antara kepemimpinan korporasi digital, transformasi pendidikan sekolah, dan pengembangan konten edukasi.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Direktur Utama PT WDSN -->
+                <div class="group p-7 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-primary-500/50 shadow-sm hover:shadow-xl transition-all duration-300 reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary-600 to-indigo-600 text-white flex items-center justify-center mb-6 shadow-lg shadow-primary-600/20 group-hover:scale-110 transition-transform">
+                        <i data-lucide="briefcase" class="w-7 h-7"></i>
+                    </div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-primary-50 dark:bg-primary-950/70 text-primary-600 dark:text-primary-400 text-xs font-semibold mb-3">
+                        Executive Leadership
+                    </span>
+                    <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">
+                        Direktur Utama PT WDSN
+                    </h3>
+                    <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mb-3">
+                        PT Wahyu Solusi Digital Nusantara
+                    </p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Memimpin arah strategis perusahaan dalam menghadirkan layanan pengembangan website, sistem informasi terintegrasi, otomasi administrasi digital, dan konsultasi transformasi teknologi.
+                    </p>
+                </div>
+
+                <!-- Card 2: Guru Informatika -->
+                <div class="group p-7 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-emerald-500/50 shadow-sm hover:shadow-xl transition-all duration-300 reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white flex items-center justify-center mb-6 shadow-lg shadow-emerald-600/20 group-hover:scale-110 transition-transform">
+                        <i data-lucide="laptop-2" class="w-7 h-7"></i>
+                    </div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/70 text-emerald-600 dark:text-emerald-400 text-xs font-semibold mb-3">
+                        Pendidik & Inovator
+                    </span>
+                    <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">
+                        Guru Informatika
+                    </h3>
+                    <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mb-3">
+                        SMP Kartikatama Metro
+                    </p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Mengajar berpikir komputasional, literasi digital, dan pemanfaatan AI secara etis kepada siswa kelas VII & VIII, sekaligus membangun sistem penilaian otomatis untuk efisiensi guru.
+                    </p>
+                </div>
+
+                <!-- Card 3: Kreator & Pelatih -->
+                <div class="group p-7 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-amber-500/50 shadow-sm hover:shadow-xl transition-all duration-300 reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 text-white flex items-center justify-center mb-6 shadow-lg shadow-amber-600/20 group-hover:scale-110 transition-transform">
+                        <i data-lucide="compass" class="w-7 h-7"></i>
+                    </div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-950/70 text-amber-600 dark:text-amber-400 text-xs font-semibold mb-3">
+                        Konten & Pembinaan
+                    </span>
+                    <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white mb-2">
+                        Kreator & Pelatih Pramuka
+                    </h3>
+                    <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 mb-3">
+                        Ruang Whyuu.Id &bull; Kwarcab Lampung Selatan
+                    </p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Berbagi tutorial teknologi dan edukasi melalui platform Ruang Whyuu.Id, serta membina kedisiplinan dan kepemimpinan generasi muda di Kwarran Jati Agung / Kwarcab Lampung Selatan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PORTOFOLIO PROYEK ==================== -->
+    <section id="proyek" class="py-20 bg-white dark:bg-slate-900/50 border-y border-slate-200/70 dark:border-slate-800/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14 reveal">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-primary-600 dark:text-primary-400">Karya & Inovasi Digital</span>
+                    <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 dark:text-white mt-2">
+                        Portofolio Proyek Unggulan
+                    </h2>
+                </div>
+                <p class="text-sm text-slate-600 dark:text-slate-400 max-w-md">
+                    Klik pada kartu proyek untuk melihat rincian arsitektur, fitur utama, dan dampak implementasi di lapangan.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1: Informatika Smart Learning (ISL) -->
+                <div onclick="openProjectModal('isl')" class="cursor-pointer group rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 reveal">
+                    <div class="h-48 bg-gradient-to-br from-blue-600 via-indigo-600 to-violet-700 p-6 flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute right-0 bottom-0 opacity-15 transform translate-x-4 translate-y-4">
+                            <i data-lucide="smartphone" class="w-36 h-36 text-white"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-semibold">Mobile App &bull; EdTech</span>
+                            <span class="w-9 h-9 rounded-full bg-white/20 text-white flex items-center justify-center group-hover:bg-white group-hover:text-primary-600 transition">
+                                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-xl text-white">Informatika Smart Learning (ISL)</h3>
+                            <p class="text-blue-100 text-xs mt-1">Aplikasi Pembelajaran Interaktif Berbasis Thunkable</p>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-3">
+                            Aplikasi mobile interaktif yang dirancang khusus untuk membantu siswa mempelajari materi Informatika secara mandiri, dilengkapi modul terstruktur, kuis evaluasi, dan antarmuka ramah pengguna.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 text-xs font-medium">Thunkable</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-medium">Android App</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-medium">Media Ajar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Sistem Buku Daftar Nilai Informatika -->
+                <div onclick="openProjectModal('nilai')" class="cursor-pointer group rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 reveal">
+                    <div class="h-48 bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-700 p-6 flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute right-0 bottom-0 opacity-15 transform translate-x-4 translate-y-4">
+                            <i data-lucide="table-2" class="w-36 h-36 text-white"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-semibold">Automation &bull; Google Workspace</span>
+                            <span class="w-9 h-9 rounded-full bg-white/20 text-white flex items-center justify-center group-hover:bg-white group-hover:text-emerald-600 transition">
+                                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-xl text-white">Sistem Buku Daftar Nilai Otomatis</h3>
+                            <p class="text-emerald-100 text-xs mt-1">Google Apps Script & Sheets untuk Kelas 7A–D & 8A–D</p>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-3">
+                            Sistem rekapitulasi dan pengolahan nilai akademik terintegrasi untuk 8 rombongan belajar (Kelas 7A–7D dan 8A–8D) di SMP Kartikatama Metro menggunakan otomasi Google Apps Script.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 text-xs font-medium">Apps Script</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-medium">Google Sheets</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-medium">Otomasi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Blog Ruang Whyuu.Id -->
+                <div onclick="openProjectModal('blog')" class="cursor-pointer group rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 reveal">
+                    <div class="h-48 bg-gradient-to-br from-amber-500 via-orange-600 to-rose-600 p-6 flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute right-0 bottom-0 opacity-15 transform translate-x-4 translate-y-4">
+                            <i data-lucide="globe" class="w-36 h-36 text-white"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-semibold">Web Media &bull; Edukasi</span>
+                            <span class="w-9 h-9 rounded-full bg-white/20 text-white flex items-center justify-center group-hover:bg-white group-hover:text-orange-600 transition">
+                                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-xl text-white">Ruang Whyuu.Id</h3>
+                            <p class="text-orange-100 text-xs mt-1">Portal Blog Edukasi, Tutorial Teknologi & Literasi Digital</p>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <p class="text-sm text-slate-600 dark:text-slate-400 line-clamp-3">
+                            Platform publikasi artikel edukasi, panduan teknologi informasi, materi ajar Informatika, serta catatan pengembangan diri yang mudah diakses oleh pelajar maupun masyarakat umum.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 text-xs font-medium">Web Publishing</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-medium">SEO Content</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-slate-200/70 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-medium">Literasi Digital</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== KEAHLIAN (SKILLS) ==================== -->
+    <section id="keahlian" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+                <span class="text-xs font-bold uppercase tracking-widest text-primary-600 dark:text-primary-400">Kompetensi Teknis & Kreatif</span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 dark:text-white mt-2">
+                    Keahlian & Teknologi
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-3">
+                    Kombinasi keahlian rekayasa perangkat lunak, pedagogi digital, kecerdasan buatan, dan produksi multimedia.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Skill 1 -->
+                <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-lg transition reveal">
+                    <div class="w-12 h-12 rounded-2xl bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-5">
+                        <i data-lucide="code-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white mb-2">Web & Apps Script</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 leading-relaxed">
+                        Pengembangan website modern (HTML, Tailwind CSS, JS), aplikasi mobile Thunkable, serta otomasi Google Apps Script & Sheets.
+                    </p>
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2">
+                        <div class="bg-blue-600 h-2 rounded-full" style="width: 92%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-lg transition reveal">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5">
+                        <i data-lucide="book-open-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white mb-2">Pendidikan Informatika</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 leading-relaxed">
+                        Perancangan kurikulum merdeka Informatika SMP, evaluasi pembelajaran berbasis digital, dan administrasi jaringan komputer (TKJ).
+                    </p>
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2">
+                        <div class="bg-emerald-500 h-2 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-lg transition reveal">
+                    <div class="w-12 h-12 rounded-2xl bg-violet-100 dark:bg-violet-900/40 text-violet-600 dark:text-violet-400 flex items-center justify-center mb-5">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white mb-2">Gemini AI & AI Agent</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 leading-relaxed">
+                        Integrasi Google Gemini AI untuk edukasi, prompt engineering produktif, serta pemanfaatan AI Agent untuk efisiensi kerja.
+                    </p>
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2">
+                        <div class="bg-violet-600 h-2 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-lg transition reveal">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-100 dark:bg-rose-900/40 text-rose-600 dark:text-rose-400 flex items-center justify-center mb-5">
+                        <i data-lucide="camera" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white mb-2">Fotografi & Video Editing</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4 leading-relaxed">
+                        Dokumentasi fotografi profesional menggunakan Canon EOS 1500D serta penyuntingan video kreatif menggunakan CapCut.
+                    </p>
+                    <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2">
+                        <div class="bg-rose-500 h-2 rounded-full" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERTIFIKASI, PELATIHAN & PRESTASI ==================== -->
+    <section id="sertifikasi" class="py-20 bg-white dark:bg-slate-900/50 border-y border-slate-200/70 dark:border-slate-800/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10 reveal">
+                <span class="text-xs font-bold uppercase tracking-widest text-primary-600 dark:text-primary-400">Rekam Jejak & Pengakuan</span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 dark:text-white mt-2">
+                    Sertifikasi, Pelatihan & Prestasi
+                </h2>
+                <p class="text-slate-600 dark:text-slate-400 mt-3">
+                    Komitmen berkelanjutan dalam pengembangan kompetensi teknologi AI, kepemimpinan, keagamaan, serta prestasi seni kaligrafi dan tahfidz.
+                </p>
+            </div>
+
+            <!-- Interactive Filter Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10 reveal" id="cert-filters">
+                <button data-filter="all" class="filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-primary-600 text-white shadow-md shadow-primary-600/20 transition">
+                    Semua (11)
+                </button>
+                <button data-filter="tech" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                    Teknologi & AI (3)
+                </button>
+                <button data-filter="leadership" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                    Kepemimpinan & Keagamaan (4)
+                </button>
+                <button data-filter="achievement" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                    Prestasi & Kejuaraan (4)
+                </button>
+            </div>
+
+            <!-- Certificates Grid (All 11 Items) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="cert-grid">
+                
+                <!-- 1. Gemini Certified Educator -->
+                <div class="cert-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-primary-500/50 transition" data-category="tech">
+                    <div class="flex items-start justify-between gap-3 mb-3">
+                        <span class="px-2.5 py-1 rounded-lg bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-[11px] font-bold">Teknologi & AI</span>
+                        <span class="text-xs font-semibold text-slate-500">2026–2029</span>
+                    </div>
+                    <h3 class="font-display font-bold text-base text-slate-900 dark:text-white">Pendidik Tersertifikasi Gemini (Gemini Certified Educator)</h3>
+                    <p class="text-xs font-medium text-primary-600 dark:text-primary-400 mt-1">Google for Education</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">Sertifikasi resmi penguasaan integrasi kecerdasan buatan Google Gemini dalam proses pembelajaran dan inovasi pendidikan.</p>
+                </div>
+
+                <!-- 2. Microsoft Elevate x BKN AI Agent -->
+                <div class="cert-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-primary-500/50 transition" data-category="tech">
+                    <div class="flex items-start justify-between gap-3 mb-3">
+                        <span class="px-2.5 py-1 rounded-lg bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-[11px] font-bold">Teknologi & AI</span>
+                        <span class="text-xs font-semibold text-slate-500">AI Training</span>
+                    </div>
+                    <h3 class="font-display font-bold text-base text-slate-900 dark:text-white">Pelatihan AI Agent & Produktivitas Digital</h3>
+                    <p class="text-xs font-medium text-primary-600 dark:text-primary-400 mt-1">Microsoft Elevate x Badan Kepegawaian Negara (BKN)</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">Pengembangan dan pemanfaatan agen kecerdasan buatan (AI Agent) untuk efisiensi tata kelola dan pelayanan publik.</p>
+                </div>
+
+                <!-- 3. Sharing Session BKN -->
+                <div class="cert-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-primary-500/50 transition" data-category="tech">
+                    <div class="flex items-start justify-between gap-3 mb-3">
+                        <span class="px-2.5 py-1 rounded-lg bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 text-[11px] font-bold">Transformasi Digital</span>
+                        <span class="text-xs font-semibold text-slate-500">Nasional</span>
+                    </div>
+                    <h3 class="font-display font-bold text-base text-slate-900 dark:text-white">Sharing Session Transformasi Digital & Manajemen Talenta</h3>
+                    <p class="text-xs font-medium text-primary-600 dark:text-primary-400 mt-1">Badan Kepegawaian Negara (BKN)</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">Forum berbagi wawasan mengenai adaptasi teknologi digital dan penguatan SDM unggul di era modern.</p>
+                </div>
+
+                <!-- 4. Standardisasi Imam & Khatib PCNU Kota Metro -->
+                <div class="cert-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-emerald-500/50 transition" data-category="leadership">
+                    <div class="flex items-start justify-between gap-3 mb-3">
+                        <span class="px-2.5 py-1 rounded-lg bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-[11px] font-bold">Keagamaan</span>
+                        <span class="text-xs font-semibold text-slate-500">Kota Metro</span>
+                    </div>
+                    <h3 class="font-display font-bold text-base text-slate-900 dark:text-white">Sertifikat Standardisasi Imam & Khatib</h3>
+                    <p class="text-xs font-medium text-emerald-600 dark:text-emerald-400 mt-1">Pengurus Cabang Nahdlatul Ulama (PCNU) Kota Metro</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">Lulus standardisasi kompetensi keilmuan, retorika dakwah, dan tata laksana ibadah sebagai Imam dan Khatib.</p>
+                </div>
+
+                <!-- 5. Digital Leadership Seminar DPD KNPI Bandar Lampung -->
+                <div class="cert-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-emerald-500/50 transition" data-category="leadership">
+                    <div class="flex items-start justify-between gap-3 mb-3">
+                        <span class="px-2.5 py-1 rounded-lg bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-[11px] font-bold">Kepemimpinan</span>
+                        <span class="text-xs font-semibold text-slate-500">Bandar Lampung</span>
+                    </div>
+                    <h3 class="font-display font-bold text-base text-slate-900 dark:text-white">Digital Leadership Seminar</h3>
+                    <p class="text-xs font-medium text-emerald-600 dark:text-emerald-400 mt-1">DPD KNPI Kota Bandar Lampung</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">Penguatan kapasitas kepemimpinan pemuda berbasis literasi digital dan inovasi kolaboratif.</p>
+                </div>
+
+                <!-- 6. MAKESTA IPNU Lampung Selatan -->
+                <div class="cert-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-emerald-500/50 transition" data-category="leadership">
+                    <div class="flex items-start justify-between gap-3 mb-3">
+                        <span class="px-2.5 py-1 rounded-lg bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-[11px] font-bold">Kaderisasi</span>
+                        <span class="text-xs font-semibold text-slate-500">Lampung Selatan</span>
+                    </div>
+                    <h3 class="font-display font-bold text-base text-slate-900 dark:text-white">Masa Kesetiaan Anggota (MAKESTA)</h3>
+                    <p class="text-xs font-medium text-emerald-600 dark:text-emerald-400 mt-1">PC IPNU Kabupaten Lampung Selatan</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">Kaderisasi formal tingkat pertama dalam membangun karakter pelajar yang berintegritas, nasionalis, dan berakhlak.</p>
+                </div>
+
+                <!-- 7. Perkemahan Hari Pramuka Ke-58 -->
+                <div class="cert-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-emerald-500/50 transition" data-category="leadership">
+                    <div class="flex items-start justify-between gap-3 mb-3">
+                        <span class="px-2.5 py-1 rounded-lg bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-[11px] font-bold">Kepramukaan</span>
+                        <span class="text-xs font-semibold text-slate-500">Pramuka</span>
+                    </div>
+                    <h3 class="font-display font-bold text-base text-slate-900 dark:text-white">Piagam Perkemahan Hari Pramuka Ke-58</h3>
+                    <p class="text-xs font-medium text-emerald-600 dark:text-emerald-400 mt-1">Gerakan Pramuka Kwarran Jati Agung / Kwarcab Lampung Selatan</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">Partisipasi aktif dan pengabdian dalam kegiatan perkemahan besar memperingati Hari Pramuka ke-58.</p>
+                </div>
+
+                <!-- 8. Hafalan Al-Qur'an 5 Juz Bil Ghoib Predikat Jayyid -->
+                <div class="cert-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-amber-500/50 transition" data-category="achievement">
+                    <div class="flex items-start justify-between gap-3 mb-3">
+                        <span class="px-2.5 py-1 rounded-lg bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 text-[11px] font-bold">Tahfidzul Qur'an</span>
+                        <span class="text-xs font-bold text-amber-600">Predikat Jayyid</span>
+                    </div>
+                    <h3 class="font-display font-bold text-base text-slate-900 dark:text-white">Syahadah Hafalan Al-Qur'an 5 Juz Bil Ghoib</h3>
+                    <p class="text-xs font-medium text-amber-600 dark:text-amber-400 mt-1">Predikat Jayyid (Baik)</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">Menyelesaikan ujian tasmi' dan hafalan 5 Juz Al-Qur'an secara bil ghoib (tanpa melihat mushaf) dengan predikat Jayyid.</p>
+                </div>
+
+                <!-- 9. Juara 1 Lomba Kaligrafi INSAN 2021 -->
+                <div class="cert-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-amber-500/50 transition" data-category="achievement">
+                    <div class="flex items-start justify-between gap-3 mb-3">
+                        <span class="px-2.5 py-1 rounded-lg bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 text-[11px] font-bold">Juara 1</span>
+                        <span class="text-xs font-semibold text-slate-500">2021</span>
+                    </div>
+                    <h3 class="font-display font-bold text-base text-slate-900 dark:text-white">Juara 1 Lomba Kaligrafi Islam</h3>
+                    <p class="text-xs font-medium text-amber-600 dark:text-amber-400 mt-1">Ajang Kompetisi INSAN 2021</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">Meraih peringkat pertama pada cabang seni lukis dan khat kaligrafi Islam tingkat pelajar/umum.</p>
+                </div>
+
+                <!-- 10. Juara 2 Lomba Kaligrafi INSAN 2021 -->
+                <div class="cert-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-amber-500/50 transition" data-category="achievement">
+                    <div class="flex items-start justify-between gap-3 mb-3">
+                        <span class="px-2.5 py-1 rounded-lg bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 text-[11px] font-bold">Juara 2</span>
+                        <span class="text-xs font-semibold text-slate-500">2021</span>
+                    </div>
+                    <h3 class="font-display font-bold text-base text-slate-900 dark:text-white">Juara 2 Lomba Kaligrafi Islam</h3>
+                    <p class="text-xs font-medium text-amber-600 dark:text-amber-400 mt-1">Ajang Kompetisi INSAN 2021</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">Penghargaan juara kedua atas karya seni kaligrafi Islam dengan ketelitian kaidah khat dan estetika warna.</p>
+                </div>
+
+                <!-- 11. Harapan 2 Kaligrafi INSAN III 2022 -->
+                <div class="cert-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 hover:border-amber-500/50 transition" data-category="achievement">
+                    <div class="flex items-start justify-between gap-3 mb-3">
+                        <span class="px-2.5 py-1 rounded-lg bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 text-[11px] font-bold">Harapan 2</span>
+                        <span class="text-xs font-semibold text-slate-500">2022</span>
+                    </div>
+                    <h3 class="font-display font-bold text-base text-slate-900 dark:text-white">Juara Harapan 2 Lomba Kaligrafi</h3>
+                    <p class="text-xs font-medium text-amber-600 dark:text-amber-400 mt-1">Kompetisi INSAN III Tahun 2022</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mt-2.5 leading-relaxed">Konsistensi prestasi dalam seni kaligrafi Islam pada perhelatan INSAN III tahun 2022.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== KONTAK SECTION ==================== -->
+    <section id="kontak" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900 to-primary-950 text-white p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden reveal">
+                <!-- Background Glow -->
+                <div class="absolute top-0 right-0 w-96 h-96 bg-primary-500/20 blur-3xl rounded-full pointer-events-none"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+                    <!-- Contact Info -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-primary-300 text-xs font-bold uppercase tracking-wider">
+                            <i data-lucide="message-square" class="w-3.5 h-3.5"></i> Mari Berkolaborasi
+                        </span>
+                        <h2 class="font-display font-extrabold text-3xl sm:text-4xl leading-tight">
+                            Diskusikan Proyek Digital atau Kerja Sama Edukasi
+                        </h2>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Silakan hubungi saya untuk kebutuhan pengembangan sistem digital bersama <strong>PT Wahyu Solusi Digital Nusantara</strong>, pelatihan teknologi pendidikan, maupun kolaborasi lainnya.
+                        </p>
+
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-center gap-4">
+                                <div class="w-11 h-11 rounded-2xl bg-white/10 flex items-center justify-center text-primary-400 shrink-0">
+                                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">Lokasi</div>
+                                    <div class="font-semibold text-sm">Lampung Selatan, Indonesia</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-11 h-11 rounded-2xl bg-white/10 flex items-center justify-center text-emerald-400 shrink-0">
+                                    <i data-lucide="building" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">Perusahaan</div>
+                                    <div class="font-semibold text-sm">PT Wahyu Solusi Digital Nusantara (PT WDSN)</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-11 h-11 rounded-2xl bg-white/10 flex items-center justify-center text-amber-400 shrink-0">
+                                    <i data-lucide="globe" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">Blog & Media</div>
+                                    <div class="font-semibold text-sm">Ruang Whyuu.Id</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="flex items-center gap-3 pt-4">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w-11 h-11 rounded-xl bg-white/10 hover:bg-primary-600 flex items-center justify-center transition">
+                                <i data-lucide="github" class="w-5 h-5"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-11 h-11 rounded-xl bg-white/10 hover:bg-primary-600 flex items-center justify-center transition">
+                                <i data-lucide="linkedin" class="w-5 h-5"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-11 h-11 rounded-xl bg-white/10 hover:bg-primary-600 flex items-center justify-center transition">
+                                <i data-lucide="instagram" class="w-5 h-5"></i>
+                            </a>
+                            <a href="mailto:kontak@whyuu.id" aria-label="Email" class="w-11 h-11 rounded-xl bg-white/10 hover:bg-primary-600 flex items-center justify-center transition">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Contact Form -->
+                    <div class="lg:col-span-7">
+                        <form id="contact-form" class="p-6 sm:p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="sender-name" class="block text-xs font-semibold text-slate-300 mb-2">Nama Lengkap</label>
+                                    <input type="text" id="sender-name" required placeholder="Masukkan nama Anda" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/15 text-white placeholder-slate-400 text-sm focus:outline-none focus:border-primary-400 transition">
+                                </div>
+                                <div>
+                                    <label for="sender-email" class="block text-xs font-semibold text-slate-300 mb-2">Alamat Email</label>
+                                    <input type="email" id="sender-email" required placeholder="nama@email.com" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/15 text-white placeholder-slate-400 text-sm focus:outline-none focus:border-primary-400 transition">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="sender-subject" class="block text-xs font-semibold text-slate-300 mb-2">Topik Keperluan</label>
+                                <select id="sender-subject" class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-white/15 text-white text-sm focus:outline-none focus:border-primary-400 transition">
+                                    <option value="Layanan Digital PT WDSN">Layanan Digital & Website (PT WDSN)</option>
+                                    <option value="Kolaborasi Pendidikan / Informatika">Kolaborasi Pendidikan & Pelatihan AI</option>
+                                    <option value="Undangan Narasumber / Kegiatan">Undangan Narasumber / Kegiatan</option>
+                                    <option value="Lainnya">Diskusi Umum Lainnya</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="sender-message" class="block text-xs font-semibold text-slate-300 mb-2">Pesan Anda</label>
+                                <textarea id="sender-message" rows="4" required placeholder="Tuliskan detail pesan atau kebutuhan kolaborasi Anda..." class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/15 text-white placeholder-slate-400 text-sm focus:outline-none focus:border-primary-400 transition"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-primary-600 hover:bg-primary-500 text-white font-semibold text-sm shadow-lg shadow-primary-600/30 flex items-center justify-center gap-2 transition">
+                                <span>Kirim Pesan Sekarang</span>
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                            </button>
+
+                            <!-- Form Feedback Message Box (No alert()) -->
+                            <div id="form-feedback" class="hidden p-4 rounded-xl bg-emerald-500/20 border border-emerald-400/40 text-emerald-200 text-xs sm:text-sm flex items-center gap-2.5">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400 shrink-0"></i>
+                                <span id="form-feedback-text">Terima kasih! Pesan Anda telah disiapkan untuk Wahyu Sudrajad.</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="border-t border-slate-200/80 dark:border-slate-800/80 py-10 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <!-- Brand with Person Icon -->
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-600 to-indigo-600 flex items-center justify-center text-white shadow-md">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                </div>
+                <div>
+                    <div class="font-display font-bold text-sm text-slate-900 dark:text-white">Wahyu Sudrajad</div>
+                    <div class="text-xs text-slate-500 dark:text-slate-400">Direktur Utama PT WDSN &bull; Lampung Selatan, Indonesia</div>
+                </div>
+            </div>
+
+            <div class="text-xs text-slate-500 dark:text-slate-400 text-center sm:text-right">
+                &copy; <span id="current-year"></span> Wahyu Sudrajad. Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== PROJECT DETAIL MODAL ==================== -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl relative animate-in fade-in zoom-in-95 duration-200">
+            <button onclick="closeProjectModal()" aria-label="Tutup Modal" class="absolute top-5 right-5 p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <span id="modal-badge" class="inline-block px-3 py-1 rounded-full bg-primary-50 dark:bg-primary-950 text-primary-600 dark:text-primary-400 text-xs font-bold mb-3">
+                Kategori Proyek
+            </span>
+            <h3 id="modal-title" class="font-display font-extrabold text-2xl text-slate-900 dark:text-white">
+                Judul Proyek
+            </h3>
+            <p id="modal-subtitle" class="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1">
+                Subjudul Proyek
+            </p>
+
+            <div class="mt-5 space-y-4 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                <p id="modal-desc"></p>
+                
+                <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200/70 dark:border-slate-700/70">
+                    <div class="font-bold text-xs uppercase tracking-wider text-slate-800 dark:text-slate-200 mb-2">Fitur & Dampak Utama:</div>
+                    <ul id="modal-features" class="space-y-1.5 text-xs text-slate-600 dark:text-slate-300 list-disc list-inside"></ul>
+                </div>
+
+                <div class="flex flex-wrap gap-2 pt-1" id="modal-tags"></div>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-100 dark:border-slate-800 flex justify-end">
+                <button onclick="closeProjectModal()" class="px-5 py-2.5 rounded-xl bg-primary-600 hover:bg-primary-700 text-white text-xs font-semibold transition">
+                    Tutup Rincian
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Set Current Year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Dark / Light Theme Toggle
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlEl = document.documentElement;
+
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlEl.classList.add('dark');
+        } else {
+            htmlEl.classList.remove('dark');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            htmlEl.classList.toggle('dark');
+            localStorage.setItem('theme', htmlEl.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Typing Effect
+        const roles = [
+            "Direktur Utama PT Wahyu Solusi Digital Nusantara",
+            "Guru Informatika SMP Kartikatama Metro",
+            "Mahasiswa S1 Sistem Informasi Universitas Terbuka",
+            "Pendidik Tersertifikasi Google Gemini AI",
+            "Kreator Edukasi Ruang Whyuu.Id"
+        ];
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingEl = document.getElementById('typing-text');
+
+        function typeEffect() {
+            const currentRole = roles[roleIndex];
+            if (isDeleting) {
+                typingEl.textContent = currentRole.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingEl.textContent = currentRole.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let speed = isDeleting ? 35 : 65;
+
+            if (!isDeleting && charIndex === currentRole.length) {
+                speed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                speed = 400;
+            }
+
+            setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+
+        // Scroll Reveal Observer
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Certificate Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const certCards = document.querySelectorAll('.cert-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-primary-600', 'text-white', 'shadow-md', 'shadow-primary-600/20');
+                    b.classList.add('bg-slate-100', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+                });
+                btn.classList.add('bg-primary-600', 'text-white', 'shadow-md', 'shadow-primary-600/20');
+                btn.classList.remove('bg-slate-100', 'dark:bg-slate-800', 'text-slate-700', 'dark:text-slate-300');
+
+                const filter = btn.getAttribute('data-filter');
+                certCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Project Detail Modal Data & Functions
+        const projectDetails = {
+            isl: {
+                badge: "Mobile App & EdTech",
+                title: "Informatika Smart Learning (ISL)",
+                subtitle: "Dikembangkan menggunakan Thunkable untuk Pembelajaran Informatika",
+                desc: "Informatika Smart Learning (ISL) adalah aplikasi pembelajaran mobile interaktif yang dirancang untuk mempermudah peserta didik memahami konsep Informatika secara visual, terstruktur, dan menyenangkan langsung dari perangkat smartphone mereka.",
+                features: [
+                    "Modul materi Informatika lengkap dan mudah dipahami siswa SMP.",
+                    "Kuis evaluasi interaktif untuk mengukur pemahaman secara langsung.",
+                    "Antarmuka responsif dan ringan dikembangkan melalui platform Thunkable."
+                ],
+                tags: ["Thunkable", "Mobile Learning", "Informatika SMP", "EdTech"]
+            },
+            nilai: {
+                badge: "Automation & Google Workspace",
+                title: "Sistem Buku Daftar Nilai Informatika",
+                subtitle: "Google Apps Script & Google Sheets (Kelas 7A–D & 8A–D)",
+                desc: "Sistem otomatisasi pengolahan nilai akademik yang dibangun untuk mendukung efektivitas penilaian mata pelajaran Informatika di SMP Kartikatama Metro mencakup 8 kelas (7A, 7B, 7C, 7D, 8A, 8B, 8C, dan 8D).",
+                features: [
+                    "Rekapitulasi nilai formatif, sumatif, dan rapor secara otomatis.",
+                    "Pengelolaan data terpusat untuk 8 rombongan belajar (Kelas VII & VIII).",
+                    "Meminimalkan kesalahan input manual menggunakan skrip kustom Google Apps Script."
+                ],
+                tags: ["Google Apps Script", "Google Sheets", "EdTech Automation", "SMP Kartikatama Metro"]
+            },
+            blog: {
+                badge: "Web Media & Edukasi",
+                title: "Ruang Whyuu.Id",
+                subtitle: "Portal Blog Edukasi, Teknologi & Literasi Digital",
+                desc: "Ruang Whyuu.Id merupakan media publikasi digital yang dikelola sebagai wadah berbagi pengetahuan seputar teknologi informasi, panduan praktis perangkat lunak, artikel pendidikan, dan catatan pengembangan diri.",
+                features: [
+                    "Artikel tutorial teknologi dan pemanfaatan AI untuk pelajar & guru.",
+                    "Dokumentasi materi pembelajaran Informatika yang terbuka untuk publik.",
+                    "Struktur konten ramah mesin pencari (SEO) dan mudah dibaca di perangkat mobile."
+                ],
+                tags: ["Blogging", "Literasi Digital", "Konten Edukasi", "SEO"]
+            }
+        };
+
+        const modalEl = document.getElementById('project-modal');
+
+        function openProjectModal(key) {
+            const data = projectDetails[key];
+            if (!data) return;
+
+            document.getElementById('modal-badge').textContent = data.badge;
+            document.getElementById('modal-title').textContent = data.title;
+            document.getElementById('modal-subtitle').textContent = data.subtitle;
+            document.getElementById('modal-desc').textContent = data.desc;
+
+            const featuresList = document.getElementById('modal-features');
+            featuresList.innerHTML = data.features.map(f => `<li>${f}</li>`).join('');
+
+            const tagsWrap = document.getElementById('modal-tags');
+            tagsWrap.innerHTML = data.tags.map(t => `<span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-medium">${t}</span>`).join('');
+
+            modalEl.classList.remove('hidden');
+            modalEl.classList.add('flex');
+        }
+
+        function closeProjectModal() {
+            modalEl.classList.add('hidden');
+            modalEl.classList.remove('flex');
+        }
+
+        modalEl.addEventListener('click', (e) => {
+            if (e.target === modalEl) closeProjectModal();
+        });
+
+        // Contact Form Handler (No alert())
+        const contactForm = document.getElementById('contact-form');
+        const formFeedback = document.getElementById('form-feedback');
+        const formFeedbackText = document.getElementById('form-feedback-text');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('sender-name').value.trim();
+            const subject = document.getElementById('sender-subject').value;
+
+            formFeedbackText.textContent = `Terima kasih, ${name}! Pesan Anda mengenai "${subject}" telah tercatat dan siap ditindaklanjuti.`;
+            formFeedback.classList.remove('hidden');
+            contactForm.reset();
+
+            setTimeout(() => {
+                formFeedback.classList.add('hidden');
+            }, 6000);
+        });
+    </script>
+</body>
+</html>
